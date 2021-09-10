@@ -1,0 +1,144 @@
+{
+  "stationCollection": [
+    {
+      "id": "6ec6f960-0c30-11ec-bb17-1b3229dfb185",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "station": "Waterford",
+      "latitude": "22",
+      "longitude": "22",
+      "readings": [
+        {
+          "id": "e997fc40-0c33-11ec-80c0-e14677cd4b65",
+          "date": "2021-01-19 08:31:00",
+          "code": "200",
+          "temp": "22",
+          "windDirection": "22",
+          "windSpeed": "22",
+          "pressure": "900"
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "e997fc40-0c33-11ec-80c0-e14677cd4b65",
+        "date": "2021-01-19 08:31:00",
+        "code": "200",
+        "temp": "22",
+        "windDirection": "22",
+        "windSpeed": "22",
+        "pressure": "900"
+      }
+    },
+    {
+      "id": "b90ac8a0-0c88-11ec-80c0-e14677cd4b65",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "station": "Ardmore",
+      "latitude": "",
+      "longitude": "",
+      "readings": [
+        {
+          "id": "0aaa55a0-0c8d-11ec-addf-d9e8537c3504",
+          "date": "2021-01-19 08:31:00",
+          "code": 200,
+          "temp": 11,
+          "windDirection": 11,
+          "windSpeed": 11,
+          "pressure": 11
+        },
+        {
+          "id": "99762ad0-11af-11ec-a4ba-6d50ebdf787b",
+          "date": "2021-01-19 08:31:00",
+          "code": 300,
+          "temp": 332,
+          "windDirection": 300,
+          "windSpeed": 33,
+          "pressure": 900
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "a119c950-1253-11ec-899c-3d9b2bd08469",
+        "code": 100,
+        "windDirection": 33,
+        "windSpeed": 33,
+        "pressure": 20,
+        "temp": 22
+      }
+    },
+    {
+      "id": "038948c0-0fc7-11ec-8de0-d9a0b2039147",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "station": "Tramore",
+      "latitude": "111100",
+      "longitude": "111100",
+      "readings": [
+        {
+          "id": "0f2c9890-10a2-11ec-b8d3-4130a4bdb900",
+          "date": "2021-01-19 08:31:00",
+          "code": 100,
+          "temp": 11,
+          "windDirection": 22,
+          "windSpeed": 3,
+          "pressure": 200
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "0f2c9890-10a2-11ec-b8d3-4130a4bdb900",
+        "date": "2021-01-19 08:31:00",
+        "code": 100,
+        "temp": 11,
+        "windDirection": 22,
+        "windSpeed": 3,
+        "pressure": 200
+      }
+    },
+    {
+      "id": "6f1be4c0-1252-11ec-a889-ffed2b10db58",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "station": "Helvic",
+      "latitude": "11",
+      "longitude": "11",
+      "readings": [
+        {
+          "id": "7a009700-1252-11ec-a889-ffed2b10db58",
+          "code": "300",
+          "windDirection": "33",
+          "windSpeed": "33",
+          "pressure": "100"
+        },
+        {
+          "id": "ca43ec30-1252-11ec-a815-b1611cf05577",
+          "code": "",
+          "windDirection": "",
+          "windSpeed": "",
+          "pressure": ""
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "ca43ec30-1252-11ec-a815-b1611cf05577",
+        "code": "",
+        "windDirection": "",
+        "windSpeed": "",
+        "pressure": ""
+      }
+    },
+    {
+      "id": "0da59130-1254-11ec-8e2b-d11f308b7eac",
+      "userid": "05950d90-1254-11ec-8e2b-d11f308b7eac",
+      "station": "Waterford",
+      "latitude": "1122",
+      "longitude": "2",
+      "readings": [
+        {
+          "id": "1ce909b0-1254-11ec-8e2b-d11f308b7eac",
+          "code": "100",
+          "windDirection": "900",
+          "windSpeed": "29",
+          "pressure": "299"
+        }
+      ],
+      "code": null
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "jim@gmail.com",
+      "password": "jim",
+      "id": "48e0a760-0450-11ec-8849-df528d180e17"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "jim@gmail.com",
+      "password": "jim",
+      "id": "d62fe250-04ca-11ec-a559-915bd76fdc39"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "owenerz@gmail.com",
+      "password": "lo$9fr01",
+      "id": "63b59b60-04e9-11ec-b613-a779566ec3e5"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "owenerz@gmail.com",
+      "password": "lo$9fr01",
+      "id": "67c0a030-0645-11ec-a02a-8d55e628db2c"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "owenerz@gmail.com",
+      "password": "lo$9fr01",
+      "id": "03b5d4b0-077c-11ec-a8e4-6dae0463b94f"
+    },
+    {
+      "firstName": "owejjj",
+      "lastName": "Corrigan",
+      "email": "owenerz@gmail.com",
+      "password": "lo$9fr01",
+      "id": "13f65ca0-0902-11ec-8bf9-f11c2a3b094a"
+    },
+    {
+      "firstName": "jim",
+      "lastName": "jones",
+      "email": "jim@gmail.com",
+      "password": "lo$9fr01",
+      "id": "329af220-0b4f-11ec-a0af-f115855b3f11"
+    },
+    {
+      "firstName": "henry",
+      "lastName": "smith",
+      "email": "henry@gmail.com",
+      "password": "henry",
+      "id": "43d2e7a0-0b4f-11ec-a0af-f115855b3f11"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "henrwwy@gmail.com",
+      "password": "henry",
+      "id": "f70589e0-0b4f-11ec-bafb-99c1e3b2cd6b"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "homer@simpson.com",
+      "password": "homer",
+      "id": "3830ef10-0c2f-11ec-9166-45c44ebc4485"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "corrigan",
+      "email": "owenerz@gmail.com",
+      "password": "lo$9fr01",
+      "id": "d79e4b90-10a0-11ec-8931-a3ada04c2805"
+    },
+    {
+      "firstName": "owen",
+      "lastName": "Corrigan",
+      "email": "owenerz@gmail.comp",
+      "password": "lo$9fr01222",
+      "id": "5c33b4f0-1257-11ec-987d-d57952661dba"
+    }
+  ]
+}

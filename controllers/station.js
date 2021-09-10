@@ -1,0 +1,92 @@
+'use strict';
+
+const logger = require('../utils/logger');
+const stationControl = require("../models/stationControl");
+const stationAnalytics = require('../utils/station-analytics');
+const uuid = require('uuid');
+
+const station = {
+    index(request, response) {
+        const stationId = request.params.id;
+        let lastReading = null;
+        let fahrenheit = null;
+        let windChill = null;
+        let windSpeed = null;
+        let windDirection = null;
+        let weatherCodes = null;
+        let weatherIcon = null;
+        let beafourt = null;
+        let latitude = null;
+        let longitude = null;
+       let tempTrend = null;
+
+        logger.debug("Station id = ", stationId);
+        const station = stationControl.getStation(stationId);
+        const minTemp = stationControl.getMinTemp(station);
+        const maxTemp = stationControl.getMaxTemp(station);
+        const minWind = stationControl.getMinWindSpeed(station);
+        const maxWind = stationControl.getMaxWindSpeed(station);
+        const minPressure = stationControl.getMinPressure(station);
+        const maxPressure = stationControl.getMaxPressure(station);
+        if (station.readings.length > 0) {//if there is a reading
+            tempTrend = stationAnalytics.getTempTrend(station);
+            lastReading = station.readings[station.readings.length - 1];
+            fahrenheit = stationAnalytics.getTempF(Number(lastReading.temp));
+            windChill = stationAnalytics.getWindChill(Number(lastReading.temp));
+            windDirection = stationAnalytics.getWindDirection(Number(lastReading.windDirection));
+            beafourt = stationAnalytics.getBeafourt(Number(lastReading.windSpeed));
+            weatherCodes = stationAnalytics.getWeatherCodes(Number(lastReading.code));
+            weatherIcon = stationAnalytics.getWeatherCodeIcons(Number(lastReading.code));
+
+        }
+        console.log(lastReading, windChill, fahrenheit, weatherCodes, minTemp);
+        const viewData = {
+            title: "station",
+            station: stationControl.getStation(stationId),
+            latitude: latitude,
+            longitude: longitude,
+            lastReading: lastReading,
+            windChill: windChill,
+            fahrenheit: fahrenheit,
+            weatherCodes: weatherCodes,
+            weatherIcon: weatherIcon,
+            windSpeed: windSpeed,
+            windDirection: windDirection,
+            beafourt: beafourt,
+            minTemp: minTemp,
+            maxTemp: maxTemp,
+            minWind: minWind,
+            maxWind: maxWind,
+            minPressure: minPressure,
+            maxPressure: maxPressure,
+            tempTrend: tempTrend,
+        };
+        response.render("station", viewData);
+    },
+
+    deleteReading(request, response) {
+        const stationId = request.params.id;
+        const readingId = request.params.readingid;
+        logger.debug(`Deleting Reading ${readingId} from Station ${stationId}`);
+        stationControl.removeReading(stationId, readingId);
+        response.redirect('/station/' + stationId);
+    },
+
+    addReading(request, response) {
+        const stationId = request.params.id;
+        const station = stationControl.getStation(stationId);
+        const newReading = {
+            id: uuid.v1(),
+            station: request.body.station,
+            date: request.body.date,
+            code: request.body.code,
+            temp: request.body.temp,
+            windDirection: request.body.windDirection,
+            windSpeed: request.body.windSpeed,
+            pressure: request.body.pressure,
+        };
+        stationControl.addReading(stationId, newReading);
+        response.redirect('/station/' + stationId);
+    },
+};
+module.exports = station;

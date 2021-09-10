@@ -1,0 +1,70 @@
+<h3 class="ui header">
+    <div class="ui five inverted stackable cards">
+        <div class=" card">
+            <div class="extra">
+                <h1><i class="large yellow marker icon"></i></h1>
+                <h3> {{station.station}}</h3>
+                <h4> Latitude: {{station.latitude}}</h4>
+                <h4> Longitude: {{station.longitude}}</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h1><i class="large red icon {{weatherIcon}}"></i></h1>
+                <h3>
+                    Latest Weather:
+                </h3>
+                <h3>
+                    {{weatherCodes}}
+                </h3>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h1><i class="large blue temperature high icon"></i></h1>
+                <h3>Temperature</h3>
+                <h4>
+                    <p>{{lastReading.temp}}: C</p>
+                    <p>{{fahrenheit}}: F</p>
+                    <p>Min: {{minTemp}}: C</p>
+                    <p>Max: {{maxTemp}}: C</p>
+                </h4>
+                <div class="column">
+                    <i class="right floated big arrow up icon"></i>
+
+                    <i class="right floated big arrow down icon"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h1><i class="large green wind icon"></i></h1>
+                <h3>
+                    <div>Wind:</div>
+                </h3>
+                <h4>
+                    <p> Bft: {{beafourt}}</p>
+                    <p>Feels Like: {{windChill}}</p>
+                    <p>{{windDirection}}</p>
+                    <p>Min: {{minWind}}</p>
+                    <p>Max: {{maxWind}}</p>
+                </h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="extra">
+                <h1><i class="large purple tachometer alternate icon"></i></h1>
+                <h3>
+                    <div>Pressure:</div>
+                </h3>
+                <h4>
+                    <p> {{lastReading.pressure}} hpa</p>
+                    <p>Min: {{minPressure}} hpa</p>
+                    <p>Max: {{maxPressure}} hpa</p>
+
+                </h4>
+            </div>
+        </div>
+    </div>
+</h3>
