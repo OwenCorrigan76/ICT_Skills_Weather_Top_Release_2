@@ -2,9 +2,8 @@
 
 const logger = require("../utils/logger");
 const stationControl = require("../models/stationControl.js");
-const uuid = require('uuid');
-const accounts = require ('./accounts.js');
-
+const uuid = require("uuid");
+const accounts = require("./accounts.js");
 
 const dashboard = {
   index(request, response) {
@@ -12,17 +11,17 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
 
     const stations = stationControl.getUserStation(loggedInUser.id);
-    for (let i=0; i<stations.length; i++) {
+    for (let i = 0; i < stations.length; i++) {
       let station = stations[i];
       if (station.readings.length > 0) {
-        station.lastReading = station.readings[station.readings.length-1];
+        station.lastReading = station.readings[station.readings.length - 1];
       }
     }
     const viewData = {
       title: "Weather Top",
-      station: stations,
+      station: stations
     };
-    logger.info('about to render', stationControl.getAllStations());
+    logger.info("about to render", stationControl.getAllStations());
     response.render("dashboard", viewData);
   },
 
@@ -34,11 +33,11 @@ const dashboard = {
       station: request.body.station,
       latitude: request.body.latitude,
       longitude: request.body.longitude,
-      readings: [],
+      readings: []
     };
-    logger.debug('Creating a new Station', newStation);
+    logger.debug("Creating a new Station", newStation);
     stationControl.addStation(newStation);
-    response.redirect('/dashboard');
+    response.redirect("/dashboard");
   },
 
   deleteReading(request, response) {
@@ -53,8 +52,8 @@ const dashboard = {
     const stationId = request.params.id;
     logger.debug(`Deleting Station ${stationId}`);
     stationControl.removeStation(stationId);
-    response.redirect('/dashboard');
-  },
+    response.redirect("/dashboard");
+  }
 };
 
 module.exports = dashboard;
