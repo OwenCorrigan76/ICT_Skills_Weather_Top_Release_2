@@ -74,6 +74,7 @@ const station = {
         response.redirect('/station/' + stationId);
     },
   
+  
 
     addReading(request, response) {
         const stationId = request.params.id;
