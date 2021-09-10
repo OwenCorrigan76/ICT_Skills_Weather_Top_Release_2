@@ -64,6 +64,8 @@ const station = {
         response.render("station", viewData);
     },
 
+  
+  
     deleteReading(request, response) {
         const stationId = request.params.id;
         const readingId = request.params.readingid;
@@ -71,14 +73,16 @@ const station = {
         stationControl.removeReading(stationId, readingId);
         response.redirect('/station/' + stationId);
     },
+  
 
     addReading(request, response) {
         const stationId = request.params.id;
         const station = stationControl.getStation(stationId);
-        const newReading = {
+          let date = stationAnalytics.setDate();
+           const newReading = {
             id: uuid.v1(),
             station: request.body.station,
-            date: request.body.date,
+            date:date,
             code: request.body.code,
             temp: request.body.temp,
             windDirection: request.body.windDirection,

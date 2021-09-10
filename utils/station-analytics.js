@@ -2,6 +2,31 @@
 const stationControl = require('../models/stationControl.js');
 const stationAnalytics = {
 
+  
+  
+  
+  setDate(){
+    const d = new Date();
+    let yyyy = d.getFullYear();
+    let mm = d.getMonth()+1;
+    let dd = d.getDate();
+    let hh = d.getHours();
+    let m = d.getMinutes();
+    let s = d.getSeconds();
+    let ms = d.getMilliseconds();
+    return yyyy+"-"+mm+"-"+dd+" "+hh+":"+m+":"+s+"."+ms;
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
     getTempTrend(readings) {
         let trend = "";

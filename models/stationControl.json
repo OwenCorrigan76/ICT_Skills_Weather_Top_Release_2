@@ -139,6 +139,24 @@
         }
       ],
       "code": null
+    },
+    {
+      "id": "f9fe37a0-127a-11ec-b70d-b9412ff02e9a",
+      "userid": "63b59b60-04e9-11ec-b613-a779566ec3e5",
+      "station": "Waterford",
+      "latitude": "11",
+      "longitude": "222",
+      "readings": [
+        {
+          "id": "225ed380-127b-11ec-b70d-b9412ff02e9a",
+          "code": "100",
+          "temp": "11",
+          "windDirection": "223",
+          "windSpeed": "3333",
+          "pressure": "4444"
+        }
+      ],
+      "code": null
     }
   ]
 }
