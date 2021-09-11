@@ -17,16 +17,6 @@ const stationAnalytics = {
     return yyyy+"-"+mm+"-"+dd+" "+hh+":"+m+":"+s+"."+ms;
   },
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
     getTempTrend(readings) {
         let trend = "";

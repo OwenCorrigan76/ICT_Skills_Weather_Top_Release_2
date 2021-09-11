@@ -3,7 +3,7 @@
 const logger = require('../utils/logger');
 const stationControl = require("../models/stationControl");
 const stationAnalytics = require('../utils/station-analytics');
-const conversions = require('../utils/sconversions');
+const conversions = require('../utils/conversions');
 const uuid = require('uuid');
 
 const station = {
@@ -19,7 +19,7 @@ const station = {
         let beafourt = null;
         let latitude = null;
         let longitude = null;
-       let tempTrend = null;
+        let tempTrend = null;
 
         logger.debug("Station id = ", stationId);
         const station = stationControl.getStation(stationId);

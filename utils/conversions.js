@@ -117,3 +117,5 @@ getWeatherCodes(code) {
             return "North";
         }
     },
+};
+module.exports = conversions;
