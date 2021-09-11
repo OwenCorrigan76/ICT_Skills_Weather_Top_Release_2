@@ -36,33 +36,24 @@
       "longitude": "1111",
       "readings": [
         {
-          "id": "921f1630-12ee-11ec-bb7b-2b3f8639ca32",
-          "date": "2021-9-11 10:54:0.467",
-          "code": 500,
-          "temp": 20,
-          "windDirection": 22,
-          "windSpeed": 90,
-          "pressure": 111
-        },
-        {
-          "id": "167db1b0-12f0-11ec-9a10-d385f6c8d933",
-          "date": "2021-9-11 11:4:52.42",
+          "id": "1a965c50-12f2-11ec-bf67-5dfa0456a034",
+          "date": "2021-9-11 11:19:17.908",
           "code": "300",
-          "temp": "10",
-          "windDirection": "20",
-          "windSpeed": "33",
-          "pressure": "90"
+          "temp": "",
+          "windDirection": "",
+          "windSpeed": "",
+          "pressure": ""
         }
       ],
       "code": null,
       "lastReading": {
-        "id": "921f1630-12ee-11ec-bb7b-2b3f8639ca32",
-        "date": "2021-9-11 10:54:0.467",
-        "code": 500,
-        "temp": 20,
-        "windDirection": 22,
-        "windSpeed": 90,
-        "pressure": 111
+        "id": "167db1b0-12f0-11ec-9a10-d385f6c8d933",
+        "date": "2021-9-11 11:4:52.42",
+        "code": "300",
+        "temp": "10",
+        "windDirection": "20",
+        "windSpeed": "33",
+        "pressure": "90"
       }
     }
   ]
