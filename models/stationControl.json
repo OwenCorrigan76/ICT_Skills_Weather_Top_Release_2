@@ -6,7 +6,46 @@
       "station": "Tramore",
       "latitude": "222",
       "longitude": "11",
-      "readings": []
+      "readings": [
+        {
+          "id": "6bfd46c0-12ee-11ec-bb7b-2b3f8639ca32",
+          "date": "2021-9-11 10:52:56.491",
+          "code": "200",
+          "temp": "11",
+          "windDirection": "22",
+          "windSpeed": "90",
+          "pressure": "110"
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "6bfd46c0-12ee-11ec-bb7b-2b3f8639ca32",
+        "date": "2021-9-11 10:52:56.491",
+        "code": "200",
+        "temp": "11",
+        "windDirection": "22",
+        "windSpeed": "90",
+        "pressure": "110"
+      }
+    },
+    {
+      "id": "87567770-12ee-11ec-bb7b-2b3f8639ca32",
+      "userid": "63b59b60-04e9-11ec-b613-a779566ec3e5",
+      "station": "Ardmore",
+      "latitude": "22",
+      "longitude": "1111",
+      "readings": [
+        {
+          "id": "921f1630-12ee-11ec-bb7b-2b3f8639ca32",
+          "date": "2021-9-11 10:54:0.467",
+          "code": "500",
+          "temp": "21",
+          "windDirection": "22",
+          "windSpeed": "90",
+          "pressure": "111"
+        }
+      ],
+      "code": null
     }
   ]
 }

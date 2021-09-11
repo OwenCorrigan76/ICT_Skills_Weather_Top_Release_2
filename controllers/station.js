@@ -3,6 +3,7 @@
 const logger = require('../utils/logger');
 const stationControl = require("../models/stationControl");
 const stationAnalytics = require('../utils/station-analytics');
+const conversions = require('../utils/sconversions');
 const uuid = require('uuid');
 
 const station = {
@@ -33,10 +34,10 @@ const station = {
             lastReading = station.readings[station.readings.length - 1];
             fahrenheit = stationAnalytics.getTempF(Number(lastReading.temp));
             windChill = stationAnalytics.getWindChill(Number(lastReading.temp));
-            windDirection = stationAnalytics.getWindDirection(Number(lastReading.windDirection));
-            beafourt = stationAnalytics.getBeafourt(Number(lastReading.windSpeed));
-            weatherCodes = stationAnalytics.getWeatherCodes(Number(lastReading.code));
-            weatherIcon = stationAnalytics.getWeatherCodeIcons(Number(lastReading.code));
+            windDirection = conversions.getWindDirection(Number(lastReading.windDirection));
+            beafourt = conversions.getBeafourt(Number(lastReading.windSpeed));
+            weatherCodes = conversions.getWeatherCodes(Number(lastReading.code));
+            weatherIcon = conversions.getWeatherCodeIcons(Number(lastReading.code));
 
         }
         console.log(lastReading, windChill, fahrenheit, weatherCodes, minTemp);
