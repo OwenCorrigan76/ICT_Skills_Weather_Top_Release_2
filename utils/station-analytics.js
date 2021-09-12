@@ -3,7 +3,17 @@ const stationControl = require('../models/stationControl.js');
 const stationAnalytics = {
 
   
-  
+       getLastReading(station) {
+        let lastReading = null;
+        if (station.readings.length > 0) {
+            lastReading = station.readings[0];
+            for (let i = 1; i < station.readings.length; i++) {
+                lastReading = station.readings[i];
+                station.tempC = lastReading.temp;
+            }
+        }
+        return lastReading;
+    },
   
   setDate(){
     const d = new Date();

@@ -31,20 +31,17 @@ const station = {
         const maxWind = stationControl.getMaxWindSpeed(station);
         const minPressure = stationControl.getMinPressure(station);
         const maxPressure = stationControl.getMaxPressure(station);
-        if (station.readings.length > 0) {//if there is a reading
+        
+      
+      if (station.readings.length > 0) {//if there is a reading
             lastReading = station.readings[station.readings.length - 1];
-          for (let i = 1; i < station.reading.length; i++) {
-        if (playlist.songs[i].duration < shortestSong.duration) {
-          shortestSong = playlist.songs[i];
-        }
-      }
             fahrenheit = stationAnalytics.getTempF(Number(lastReading.temp));
             windChill = stationAnalytics.getWindChill(Number(lastReading.temp));
             windDirection = conversions.getWindDirection(Number(lastReading.windDirection));
             beafourt = conversions.getBeafourt(Number(lastReading.windSpeed));
             weatherCodes = conversions.getWeatherCodes(Number(lastReading.code));
             weatherIcon = conversions.getWeatherCodeIcons(Number(lastReading.code));
-          tempTrend = stationAnalytics.getTempTrend(station);
+            tempTrend = stationAnalytics.getTempTrend(station);
 
         }
         console.log(lastReading, windChill, fahrenheit, weatherCodes, minTemp);
