@@ -1,54 +1,53 @@
 <h3 class="ui header">
-    <div class="ui five inverted stackable cards">
-        <div class="card">
-            <div class="extra">
-                <h1><i class="large yellow marker icon"></i></h1>
-                <h3> {{station}}</h3>
-            </div>
-        </div>
-        <div class="card">
-            <div class="extra">
-                <h1><i class="large red icon {{weatherIcon}}"></i></h1>
-                <h3>
-                    Latest Weather:
-                </h3>
-                <h3>
-                    {{weatherCodes}}
-                </h3>
-            </div>
-        </div>
-        <div class="card">
-            <div class="extra">
-                <h1><i class="large blue temperature high icon"></i></h1>
-                <h3>Temperature</h3>
-                <h4>
-                    <p>{{lastReading.temp}}: C
-                    </p>
-                </h4>
-            </div>
-        </div>
-        <div class="card">
-            <div class="extra">
-                <h1><i class="large green wind icon"></i></h1>
-                <h3>
-                    <div>Wind:</div>
-                </h3>
-                <h4>
-                    <p> Bft: {{beafourt}}</p>
-
-                </h4>
-            </div>
-        </div>
-        <div class="card">
-            <div class="extra">
-                <h1><i class="large purple tachometer alternate icon"></i></h1>
-                <h3>
-                    <div>Pressure:</div>
-                </h3>
-                <h4>
-                    <p> {{lastReading.pressure}} hpa</p>
-                </h4>
-            </div>
-        </div>
+  <div class="ui five inverted stackable cards">
+    <div class="card">
+      <div class="extra">
+        <h1><i class="large yellow marker icon"></i></h1>
+        <h3> {{station}}</h3>
+      </div>
     </div>
+    <div class="card">
+      <div class="extra">
+        <h1><i class="large red icon {{weatherIcon}}"></i></h1>
+        <h3>
+          Latest Weather:
+        </h3>
+        <h3>
+          {{weatherCodes}}
+        </h3>
+      </div>
+    </div>
+    <div class="card">
+      <div class="extra">
+        <h1><i class="large blue temperature high icon"></i></h1>
+        <h3>Temperature</h3>
+        <h4>
+          <p>{{lastReading.temp}}: C</p>
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="extra">
+        <h1><i class="large green wind icon"></i></h1>
+        <h3>
+          <div>Wind:</div>
+        </h3>
+        <h4>
+          <p> Bft: {{lastReading.beafourt}}</p>
+
+        </h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="extra">
+        <h1><i class="large purple tachometer alternate icon"></i></h1>
+        <h3>
+          <div>Pressure:</div>
+        </h3>
+        <h4>
+          <p> {{lastReading.pressure}} hpa</p>
+        </h4>
+      </div>
+    </div>
+  </div>
 </h3>

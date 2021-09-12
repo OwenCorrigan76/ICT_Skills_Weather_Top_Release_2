@@ -28,13 +28,13 @@
       ],
       "code": null,
       "lastReading": {
-        "id": "6bfd46c0-12ee-11ec-bb7b-2b3f8639ca32",
-        "date": "2021-9-11 10:52:56.491",
-        "code": "200",
-        "temp": "11",
-        "windDirection": "22",
-        "windSpeed": "90",
-        "pressure": "110"
+        "id": "6f320ce0-13a7-11ec-a413-f5cbd97130d6",
+        "date": "2021-9-12 8:57:18.765",
+        "code": "300",
+        "temp": "21",
+        "windDirection": "222",
+        "windSpeed": "22",
+        "pressure": "22"
       }
     },
     {
@@ -57,7 +57,7 @@
           "id": "afa59e30-139e-11ec-bc70-15a0b98977f2",
           "date": "2021-9-12 7:54:41.426",
           "code": 100,
-          "temp": 18,
+          "temp": 11,
           "windDirection": 22,
           "windSpeed": 25,
           "pressure": 100
@@ -68,10 +68,47 @@
         "id": "afa59e30-139e-11ec-bc70-15a0b98977f2",
         "date": "2021-9-12 7:54:41.426",
         "code": 100,
-        "temp": 18,
+        "temp": 11,
         "windDirection": 22,
         "windSpeed": 25,
         "pressure": 100
+      }
+    },
+    {
+      "id": "640bb660-13aa-11ec-9a33-2fdabeaaa698",
+      "userid": "48e0a760-0450-11ec-8849-df528d180e17",
+      "station": "Waterford",
+      "latitude": "22",
+      "longitude": "22",
+      "readings": [
+        {
+          "id": "6b9c0d80-13aa-11ec-9a33-2fdabeaaa698",
+          "date": "2021-9-12 10:18:41.240",
+          "code": "200",
+          "temp": "1",
+          "windDirection": "22",
+          "windSpeed": "33",
+          "pressure": "333"
+        },
+        {
+          "id": "73f9c6c0-13aa-11ec-9a33-2fdabeaaa698",
+          "date": "2021-9-12 10:18:55.276",
+          "code": "200",
+          "temp": "11",
+          "windDirection": "11",
+          "windSpeed": "11",
+          "pressure": "111"
+        }
+      ],
+      "code": null,
+      "lastReading": {
+        "id": "73f9c6c0-13aa-11ec-9a33-2fdabeaaa698",
+        "date": "2021-9-12 10:18:55.276",
+        "code": "200",
+        "temp": "11",
+        "windDirection": "11",
+        "windSpeed": "11",
+        "pressure": "111"
       }
     }
   ]

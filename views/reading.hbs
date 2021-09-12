@@ -1,29 +1,29 @@
 {{> menu}}
 <h2 class="ui header">
-{{station.station}} Reading Updater
+  {{station.station}} Reading Updater
 </h2>
 <form class="ui stacked segment form" action="/reading/{{station.id}}/updatereading/{{reading.id}}" method="POST">
-    <div class="six fields">
-        <div class="field">
-            <label>Code</label>
-            <input placeholder="Title" type="text" name="code" value="{{reading.code}}">
-        </div>
-        <div class="field">
-            <label>Temperature</label>
-            <input placeholder="Temp" type="text" name="temp" value="{{reading.temp}}">
-        </div>
-        <div class="field">
-            <label>WInd Direction</label>
-            <input placeholder="direction" type="number" name="windDirection" value="{{reading.windDirection}}">
-        </div>
-        <div class="field">
-            <label>WInd Speed</label>
-            <input placeholder="wind" type="number" name="windSpeed" value="{{reading.windSpeed}}">
-        </div>
-        <div class="field">
-            <label>Pressure</label>
-            <input placeholder="pressure" type="number" name="pressure" value="{{reading.pressure}}">
-        </div>
+  <div class="six fields">
+    <div class="field">
+      <label>Code</label>
+      <input placeholder="Title" type="text" name="code" value="{{reading.code}}">
     </div>
-    <button class="ui blue submit button">Update Reading</button>
+    <div class="field">
+      <label>Temperature</label>
+      <input placeholder="Temp" type="text" name="temp" value="{{reading.temp}}">
+    </div>
+    <div class="field">
+      <label>WInd Direction</label>
+      <input placeholder="direction" type="number" name="windDirection" value="{{reading.windDirection}}">
+    </div>
+    <div class="field">
+      <label>WInd Speed</label>
+      <input placeholder="wind" type="number" name="windSpeed" value="{{reading.windSpeed}}">
+    </div>
+    <div class="field">
+      <label>Pressure</label>
+      <input placeholder="pressure" type="number" name="pressure" value="{{reading.pressure}}">
+    </div>
+  </div>
+  <button class="ui blue submit button">Update Reading</button>
 </form>

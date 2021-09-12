@@ -5,7 +5,7 @@ const stationControl = require("../models/stationControl.js");
 const uuid = require("uuid");
 const accounts = require("./accounts.js");
 const axios = require("axios");
-const oneCallRequest = `https://api.openweathermap.org/data/2.5/onecall?lat=52.160858&lon=-7.152420&units=metric&appid=b425f2808859b7f10ed16f168702a1a5`
+const oneCallRequest = `https://api.openweathermap.org/data/2.5/onecall?lat=52.160858&lon=-7.152420&units=metric&appid=b425f2808859b7f10ed16f168702a1a5`;
 
 const dashboard = {
   index(request, response) {
@@ -19,7 +19,7 @@ const dashboard = {
         station.lastReading = station.readings[station.readings.length - 1];
       }
     }
-    
+
     const viewData = {
       title: "Weather Top",
       station: stations
@@ -27,15 +27,14 @@ const dashboard = {
     logger.info("about to render", stationControl.getAllStations());
     response.render("dashboard", viewData);
   },
-  
-  
-  
-   async addreport(request, response) {
+
+
+  async addreport(request, response) {
     logger.info("rendering new report");
     let report = {};
     const lat = request.body.lat;
     const lng = request.body.lng;
-    const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&units=metric&appid=YOUR_API_KEY_HERE`
+    const requestUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lng}&units=metric&appid=YOUR_API_KEY_HERE`;
     const result = await axios.get(requestUrl);
     if (result.status == 200) {
       const reading = result.data.current;
