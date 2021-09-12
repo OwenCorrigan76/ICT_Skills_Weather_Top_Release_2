@@ -21,7 +21,7 @@ const station = {
         const maxPressure = stationControl.getMaxPressure(station);
         const lastReading = stationAnalytics.getLastReading(station);
 
-       let fahrenheit = null;
+        let fahrenheit = null;
         let windChill = null;
         let windSpeed = null;
         let windDirection = null;
@@ -33,7 +33,6 @@ const station = {
         let tempTrend = null;
       
       if (station.readings.length > 0) {//if there is a reading
-           // lastReading = station.readings[station.readings.length - 1];
             fahrenheit = stationAnalytics.getTempF(Number(lastReading.temp));
             windChill = stationAnalytics.getWindChill(Number(lastReading.temp));
             windDirection = conversions.getWindDirection(Number(lastReading.windDirection));
