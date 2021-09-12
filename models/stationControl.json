@@ -38,11 +38,20 @@
         {
           "id": "1a965c50-12f2-11ec-bf67-5dfa0456a034",
           "date": "2021-9-11 11:19:17.908",
-          "code": "300",
-          "temp": "",
-          "windDirection": "",
-          "windSpeed": "",
-          "pressure": ""
+          "code": 300,
+          "temp": 20,
+          "windDirection": 20,
+          "windSpeed": 20,
+          "pressure": 90
+        },
+        {
+          "id": "afa59e30-139e-11ec-bc70-15a0b98977f2",
+          "date": "2021-9-12 7:54:41.426",
+          "code": "100",
+          "temp": "18",
+          "windDirection": "22",
+          "windSpeed": "25",
+          "pressure": "100"
         }
       ],
       "code": null,

@@ -6,6 +6,7 @@ const uuid = require("uuid");
 const accounts = require("./accounts.js");
 const axios = require("axios");
 const oneCallRequest = `https://api.openweathermap.org/data/2.5/onecall?lat=52.160858&lon=-7.152420&units=metric&appid=b425f2808859b7f10ed16f168702a1a5`
+
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
@@ -26,6 +27,8 @@ const dashboard = {
     logger.info("about to render", stationControl.getAllStations());
     response.render("dashboard", viewData);
   },
+  
+  
   
    async addreport(request, response) {
     logger.info("rendering new report");
