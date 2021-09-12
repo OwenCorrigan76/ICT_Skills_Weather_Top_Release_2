@@ -27,7 +27,7 @@ const stationControl = {
     getMinTemp(station) {
         let minTemp = null;
         if (station.readings.length > 0) {
-            minTemp = station.readings [0].temp;
+            minTemp = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].temp < minTemp.temp)
                     minTemp = station.readings[i];
@@ -39,7 +39,7 @@ const stationControl = {
     getMaxTemp(station) {
         let maxTemp = null;
         if (station.readings.length > 0) {
-            maxTemp = station.readings [0].temp;
+            maxTemp = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].temp > maxTemp.temp)
                     maxTemp = station.readings[i];

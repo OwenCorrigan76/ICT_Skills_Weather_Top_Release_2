@@ -26,8 +26,8 @@
                 <h4>
                     <p>{{lastReading.temp}}: C</p>
                     <p>{{fahrenheit}}: F</p>
-                    <p>Min: {{minTemp}}: C</p>
-                    <p>Max: {{maxTemp}}: C</p>
+                    <p>Min: {{minTemp.temp}}: C</p>
+                    <p>Max: {{maxTemp.temp}}: C</p>
                 </h4>
                 <div class="column">
                     <i class="right floated big arrow up icon"></i>
@@ -47,8 +47,8 @@
                     <p> Bft: {{beafourt}}</p>
                     <p>Feels Like: {{windChill}}</p>
                     <p>{{windDirection}}</p>
-                    <p>Min: {{minWind}}</p>
-                    <p>Max: {{maxWind}}</p>
+                    <p>Min: {{minWind.windSpeed}}</p>
+                    <p>Max: {{maxWind.windSpeed}}</p>
                 </h4>
             </div>
         </div>
@@ -60,8 +60,8 @@
                 </h3>
                 <h4>
                     <p> {{lastReading.pressure}} hpa</p>
-                    <p>Min: {{minPressure}} hpa</p>
-                    <p>Max: {{maxPressure}} hpa</p>
+                    <p>Min: {{minPressure.pressure}} hpa</p>
+                    <p>Max: {{maxPressure.pressure}} hpa</p>
 
                 </h4>
             </div>
