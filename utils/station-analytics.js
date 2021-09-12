@@ -9,13 +9,15 @@ const stationAnalytics = {
             lastReading = station.readings[0];
             for (let i = 1; i < station.readings.length; i++) {
                 lastReading = station.readings[i];
-                station.tempC = lastReading.temp;
+             if (station.readings.length > 0) {
+        station.lastReading = station.readings[station.readings.length - 1];
+        }
             }
         }
         return lastReading;
     },
   
-  setDate(){
+    setDate(){
     const d = new Date();
     let yyyy = d.getFullYear();
     let mm = d.getMonth()+1;

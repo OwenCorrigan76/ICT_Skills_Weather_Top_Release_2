@@ -11,8 +11,17 @@ const uuid = require('uuid');
 const station = {
     index(request, response) {
         const stationId = request.params.id;
-        let lastReading = null;
-        let fahrenheit = null;
+        logger.debug("Station id = ", stationId);
+        const station = stationControl.getStation(stationId);
+        const minTemp = stationControl.getMinTemp(station);
+        const maxTemp = stationControl.getMaxTemp(station);
+        const minWind = stationControl.getMinWindSpeed(station);
+        const maxWind = stationControl.getMaxWindSpeed(station);
+        const minPressure = stationControl.getMinPressure(station);
+        const maxPressure = stationControl.getMaxPressure(station);
+        const lastReading = stationAnalytics.getLastReading(station);
+
+       let fahrenheit = null;
         let windChill = null;
         let windSpeed = null;
         let windDirection = null;
@@ -22,19 +31,9 @@ const station = {
         let latitude = null;
         let longitude = null;
         let tempTrend = null;
-
-        logger.debug("Station id = ", stationId);
-        const station = stationControl.getStation(stationId);
-        const minTemp = stationControl.getMinTemp(station);
-        const maxTemp = stationControl.getMaxTemp(station);
-        const minWind = stationControl.getMinWindSpeed(station);
-        const maxWind = stationControl.getMaxWindSpeed(station);
-        const minPressure = stationControl.getMinPressure(station);
-        const maxPressure = stationControl.getMaxPressure(station);
-        
       
       if (station.readings.length > 0) {//if there is a reading
-            lastReading = station.readings[station.readings.length - 1];
+           // lastReading = station.readings[station.readings.length - 1];
             fahrenheit = stationAnalytics.getTempF(Number(lastReading.temp));
             windChill = stationAnalytics.getWindChill(Number(lastReading.temp));
             windDirection = conversions.getWindDirection(Number(lastReading.windDirection));

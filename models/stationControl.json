@@ -47,22 +47,22 @@
         {
           "id": "afa59e30-139e-11ec-bc70-15a0b98977f2",
           "date": "2021-9-12 7:54:41.426",
-          "code": "100",
-          "temp": "18",
-          "windDirection": "22",
-          "windSpeed": "25",
-          "pressure": "100"
+          "code": 100,
+          "temp": 18,
+          "windDirection": 22,
+          "windSpeed": 25,
+          "pressure": 100
         }
       ],
       "code": null,
       "lastReading": {
-        "id": "167db1b0-12f0-11ec-9a10-d385f6c8d933",
-        "date": "2021-9-11 11:4:52.42",
-        "code": "300",
-        "temp": "10",
-        "windDirection": "20",
-        "windSpeed": "33",
-        "pressure": "90"
+        "id": "afa59e30-139e-11ec-bc70-15a0b98977f2",
+        "date": "2021-9-12 7:54:41.426",
+        "code": 100,
+        "temp": 18,
+        "windDirection": 22,
+        "windSpeed": 25,
+        "pressure": 100
       }
     }
   ]
