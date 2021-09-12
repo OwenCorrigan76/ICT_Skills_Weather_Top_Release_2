@@ -24,7 +24,7 @@ const stationControl = {
         return this.store.findOneBy(this.collection, {id: id});
     },
 
-    getMinTemp(station) {
+   getMinTemp(station) {
         let minTemp = null;
         if (station.readings.length > 0) {
             minTemp = station.readings [0];
@@ -51,7 +51,7 @@ const stationControl = {
     getMinWindSpeed(station) {
         let minWind = null;
         if (station.readings.length > 0) {
-            minWind = station.readings [0].windSpeed;
+            minWind = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].windSpeed < minWind.windSpeed)
                     minWind = station.readings[i];
@@ -63,7 +63,7 @@ const stationControl = {
     getMaxWindSpeed(station) {
         let maxWind = null;
         if (station.readings.length > 0) {
-            maxWind = station.readings [0].windSpeed;
+            maxWind = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].windSpeed > maxWind.windSpeed)
                     maxWind = station.readings[i];
@@ -75,7 +75,7 @@ const stationControl = {
     getMinPressure(station) {
         let minPressure = null;
         if (station.readings.length > 0) {
-            minPressure = station.readings [0].pressure;
+            minPressure = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].pressure < minPressure.pressure)
                     minPressure = station.readings[i];
@@ -87,7 +87,7 @@ const stationControl = {
     getMaxPressure(station) {
         let maxPressure = null;
         if (station.readings.length > 0) {
-            maxPressure = station.readings[0].pressure;
+            maxPressure = station.readings [0];
             for (let i = 1; i < station.readings.length; i++) {
                 if (station.readings[i].pressure > maxPressure.pressure)
                     maxPressure = station.readings[i];
